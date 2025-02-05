@@ -5,9 +5,8 @@
 # this alogrithm assumes that arr is sorted
 def binary_search(arr, high, low, x):
 
-    mid = low + (high-low)//2
-
-    while mid <= high:
+    while low <= high:
+        mid = low + (high-low)//2
         if arr[mid] == x:
             return mid
         elif arr[mid] > x:
