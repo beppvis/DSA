@@ -10,9 +10,9 @@ def binary_search(arr, high, low, x):
         if arr[mid] == x:
             return mid
         elif arr[mid] > x:
-            mid -= 1
+            high = mid - 1
         else:
-            mid += 1
+            low = mid + 1
 
     # -1 means the item x could not be found
     return -1
@@ -20,5 +20,5 @@ def binary_search(arr, high, low, x):
 
 # example
 arr = [1, 2, 3, 4, 10, 23]
-i = binary_search(arr, len(arr)-1, 0, 23)
+i = binary_search(arr, len(arr)-1, 0, 2)
 print(i)
