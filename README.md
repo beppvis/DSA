@@ -1,4 +1,4 @@
-# Discrete Math Algorithms
+# Datastructure and Algorithms
 
 
 ## FAQ
