@@ -1,6 +1,5 @@
 def towerOfHanoi(n, src, dest, aux):
-    if n == 1:
-        print("Moving 1 ", "from ", src, "putting it in", dest)
+    if n == 0:
         return
     towerOfHanoi(n-1, src, aux, dest)
     print("Moving", n, "from", src, "to destination", dest)
