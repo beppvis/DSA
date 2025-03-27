@@ -43,7 +43,7 @@ def dijkstra(edges, vertices):
     n = int(input("enter source node : "))
     for index in range(len(vertices)):
         if index+1 == n:
-            # [0,0] is appened when if it is the source node
+            # [0,0] is appended if it is the source node
             visited_distance.append([0, 0])
         else:
             visited_distance.append([0, sys.maxsize])
