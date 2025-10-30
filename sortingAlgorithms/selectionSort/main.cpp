@@ -14,6 +14,8 @@ public:
         }
       }
       int tmp = arr[min_idx];
+      printf("Min %d\n",arr[min_idx]);
+      printf("Max %d\n",arr[i]);
       arr[min_idx] = arr[i];
       arr[i] = tmp;
     }
