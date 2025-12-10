@@ -1,5 +1,7 @@
 #include <cstdio>
 #include <queue>
+#include <stack>
+#include <utility>
 using namespace std;
 
 
@@ -55,6 +57,7 @@ class Solution{
     }
     void levelOrderTraversal(Node* root){
         queue<Node*> q;
+        stack<int>s;
         q.push(root);
         while(!q.empty()){
             int len = q.size();
